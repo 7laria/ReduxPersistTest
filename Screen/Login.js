@@ -68,10 +68,10 @@ class Login extends Component {
     // }
   }
 
-  static shouldComponentUpdate(nextProps, nextState) {
-    console.log(" %c shouldComponentUpdate", "color: blue; font-weight: bold");
-    console.log("prevState: ", nextProps, "nextProps: ", nextState);
-  }
+  // static shouldComponentUpdate(nextProps, nextState) {
+  //   console.log(" %c shouldComponentUpdate", "color: blue; font-weight: bold");
+  //   console.log("prevState: ", nextProps, "nextProps: ", nextState);
+  // }
 
   handleEmailSubmit = email => {
     if (!email) return; // Don't submit if empty
@@ -148,7 +148,7 @@ const mapStateToProps = state => {
     login: state.login
   });
   return {
-    pippo: state.pippo,
+    pippo: state.pippo.pippo,
     login: state.login
   };
 };
