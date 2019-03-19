@@ -1,7 +1,7 @@
 import { combineReducers } from "redux";
 
-import { pippoReducer, loginReducer } from "./reducers";
-
+import loginReducer from "./loginReducer";
+import pippoReducer from './pippoReducer'
 const rootReducer = combineReducers({
   pippo: pippoReducer,
   login: loginReducer
